@@ -37,6 +37,7 @@ class MainActivity : AppCompatActivity() {
                         {
                             val webIntent = Intent(Intent.ACTION_VIEW, Uri.parse(result.articles[it].url))
                             startActivity(webIntent)
+                            Log.d("MainActivity", "browseropening")
                         }
                 }
             }
